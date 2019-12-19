@@ -1,0 +1,400 @@
+/* General Styles */
+.about-container {
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+section {
+  
+  padding: 4% 0;
+}
+i {
+  font-size: 4rem;
+}
+
+/* Header Styles */
+header {
+  background-image: url(../images/home-banner.jpg);
+  height: 40vh;
+  background-color: #e0ffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+.title-container {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.main-titles {
+  width: 90%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+}
+/* End Of Header Styles */
+
+/* About Section Styles */
+.about {
+  background-color: @light-main;
+  .Flex(center,center,column);
+
+  h2 {
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+  }
+
+.text {
+  background-color: white;
+  padding: 4%;
+  text-align: center;
+  width: 80%;
+}
+p {
+  text-align: justify;
+  line-height: 3.5rem;
+  
+}
+}
+/* End Of About Section Styles  */
+/* Skills Section Styles */
+.skills {
+  background-color: #3cc43c;
+
+  h2 {
+    text-align: center;
+    padding: 3% 0;
+  }
+ 
+  .skills-contanier {
+    display: flex;
+    justify-content: space-around;
+   h3 {
+    color: @light-acc;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  div {
+    text-align: center;
+    width: 25%;
+  }
+  p {
+    text-align: justify;
+  }
+}
+}
+
+/* End Of Skills Section  */
+
+/* Experience Section Styles */
+.experience {
+  background-color: white;
+
+h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+.big-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.one {
+  margin-left: 2%;
+  width: 20%;
+}
+.two {
+  width: 20%;
+}
+.three {
+  width: 40%;
+}
+}
+/* End of Experience Section  */
+/* Footer Section Styles */
+footer {
+  background-color: #e0ffff;
+  padding: 3% 0;
+  text-align: center;
+}
+
+input,
+label,
+textarea {
+  width: 100%;
+  margin: 4% 0;
+}
+input,
+textarea {
+  border: none;
+  border-bottom: 3px solid #00ced1;
+  background-color: #e0ffff;
+}
+footer nav {
+  width: 80%;
+}
+footer nav:hover {
+  color: #fde769;
+}
+
+/* End of Experience Section  */
+
+/* Boxing Start */
+.CUISINE {
+  .Boxing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 5% 5% 5%;
+    flex-wrap:wrap;
+  
+    .box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 2%;
+      width: 20%;
+      padding: 0% 0% 0% 0%;
+    
+      
+    .food {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+    .food1 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+
+    }
+    .food2 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+
+    }
+    .food3 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+
+    }
+    .food4 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+    .food5 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+    .food6 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+    .food7 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+    .food8 {
+      width: 42rem;
+      height: 13rem;
+      margin: 20px 2.5%;
+    }
+  }
+}
+}
+/*Boxing End */
+
+/*Media  Qurries*/
+
+.about {
+  @media @phone {
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Flex(space-evenly, @direction:column);
+  @media @phone {
+  
+  h2 {
+    color: @main-color;
+  }
+  p {
+    @media @phone {
+      padding: 2rem 0;
+    }
+  }
+}
+}
+
+.skills {
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-contanier {
+    @media @phone {
+      .Flex(space-between, center, column);
+      width: 100%;
+    }
+    div {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    p {
+      @media @phone {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+.CUISINE {
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .Boxing {
+    @media @phone {
+      height: 50%;
+      display: flex;
+      flex: wrap;
+      .Flex(space-between, center, column);
+    }
+    .food {
+      img {
+        @media @phone {
+          max-width: 250%;
+          border-radius: 20%;
+          margin: 30% 10% 10% 10%;
+          padding: 0% 0% 0% 0%;
+        }
+      }
+    }
+    .food1 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food2 {
+        img {
+          @media @phone {
+            max-width: 250%;
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
+          }
+        }
+      }
+    .food3 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food5 {
+        img {
+          @media @phone {
+            max-width: 250%;
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
+          }
+        }
+      }
+    .food6 {
+      img {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .food7 {
+        img {
+          @media @phone {
+            max-width: 250%;
+            border-radius: 20%;
+            margin: 10% 0% 0% 0%;
+            padding: 0% 0% 0% 0%;
+          }
+        }
+      }
+    .food8 {
+      img {
+        @media @phone {
+            display: none;
+        }
+      }
+    }
+  }
+}
+
+
+/* EXPERIENCE MEDIA QUARRIES */
+
+.big-container {
+    @media @phone {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 1rem 3rem .2rem;
+        justify-content: center;
+        align-items: left;
+      }
+      @media @phone {
+      h2 {
+        text-align: left;
+      }
+      h3 {
+        text-align: left;
+      }
+      h4 {
+        text-align: left;
+      }
+      img {
+          display: none;
+      }
+}
+}

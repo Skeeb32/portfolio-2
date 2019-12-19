@@ -1,0 +1,210 @@
+
+.continer {
+   @media @desktop{
+       max-width:1000px;
+       margin:0 auto;
+   }
+}
+.home-header {
+
+    //Background settings for image
+    background-image:url(../images/home-banner.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:55vh;
+}
+
+
+.home-about{
+    .Flex(space-around);
+    padding: 10em 0;
+    @media @phone{
+        flex-direction:column;
+        padding: 2.5rem 0 0 0;
+    }
+    
+    .home-about-text{
+        @media @phone{
+            
+            width:100%;
+            padding:1rem 1rem 3rem 1rem;
+            justify-content: center;
+            align-items:center;
+        }
+        
+        .Flex(space-evenly,@direction:column);
+        
+        width:35%;
+        h2{
+            color:@main-color;
+
+        }
+        p{
+            @media @phone{
+                padding:2rem 0;
+            }
+        }
+        a{
+            text-decoration:none;
+            border:1px solid @dark-main;
+            width:16rem;
+            padding: .5rem 1.8rem;
+            text-align:center;
+            font-weight:bold;
+            color:@dark-main;
+            background:@main-color;
+            font-size:1.5rem;
+            &:hover{
+                background-color:@dark-main;
+                color:@main-color;
+            }
+        }
+        
+    }
+    img{
+        width:35%;
+        box-shadow: 0 1rem 1.5rem rgba(000,000,000,0.3);
+        
+        @media @phone{
+            
+            width:100%;
+            align-self:flex-end;
+        }
+    }
+}
+
+.home-app-info {
+    background-color:@light-main;
+    color:@dark-main;
+    text-align:center;
+    padding:3rem 0;
+    h2{
+        padding-bottom:1.5rem;
+    }
+    .content-app-info{
+        .Flex(space-evenly,@direction:column);
+        
+        
+        div{
+            .Flex(space-around);
+            text-align:left;
+            padding: 3.5rem 0;
+            align-content:center;
+            @media @phone{
+                flex-direction:column;
+            }
+            .about-text{
+                width:25%;
+                .Flex(space-around,@direction:column);
+                @media @phone{
+                    width:100%;
+                    order:2;
+                    align-items:center;
+                    padding:0 2rem;
+                }
+                h3{
+                    font-size:1.8rem;
+                    @media @phone{
+                        padding:5rem;
+                    }
+
+                }
+                p{
+                    line-height:1.8rem;
+
+                }
+            }
+            img{
+                width:40%;
+                box-shadow: 0 1rem 1.5rem rgba(000,000,000,0.3);
+                
+                @media @phone{
+                    width:100%;
+                    order:1;
+                }
+            }
+            .text-01{
+                order:2;
+                justify-content:center;
+                align-content:center;
+                h3{
+                    padding-bottom:5rem;
+                }
+                p{
+                    
+                    line-height:1.8rem;
+
+                }
+            }
+            .img-01{
+                order:1;
+            }
+        }
+    }
+
+    
+}
+
+.home-footer{
+    .Flex(space-between);
+    @media @phone{
+        flex-direction:column;
+        justify-items:center;
+        align-items:center;
+    }
+    background-color:@dark-main;
+    color:@light-main;
+    // height:15rem;
+    // height:12%;
+    padding: 4rem;
+    font-size:1rem;
+    .footer-nav-container{
+        .Flex(space-between);
+        padding:2rem inherit 2rem inherit;
+        
+        @media @phone{
+            flex-direction:column;
+            width:100%;
+        }
+        width:30%;
+       
+        nav{
+            .Flex(space-between,@direction:column);
+        
+            @media @phone{
+                flex-direction:row;
+                width:100%;
+                padding-bottom:3rem;
+            
+            }
+            width:50%;
+                a{
+                text-decoration:none;
+                color:inherit;
+                    &:hover{
+                        cursor:pointer;
+                        color:@main-color;
+                        // border-bottom:1px solid @light-main;
+                    
+                    }
+                }
+            
+        
+        }
+    }    
+    div{
+        .Flex(space-between,@direction:column);
+        // width: 45%;
+        // height:100%;
+        p{
+          align-self:flex-end; 
+          @media @phone{
+              align-self:center;
+          }
+          font-size:.9rem;
+        }
+        
+    }
+   
+}

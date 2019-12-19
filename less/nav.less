@@ -1,0 +1,40 @@
+.text-container{
+    background-color:@light-main;
+        //flex settings 
+        .Flex(space-around,center);
+        padding: 1rem 0 ;
+        @media @phone{
+            flex-direction:column;
+        }
+    nav {
+        .Flex(space-around,center);
+        width:50%;
+        @media @phone{
+            width:100%;
+        }
+        a {
+            text-decoration:none;
+            color:@dark-main;
+            font-size:1.8rem;
+            line-height:2.8rem;
+            padding:0 1rem;
+            border-radius:5px;
+            font-weight:800;
+            &:hover{
+                color:@light-main;
+                cursor:pointer;
+                background-color:@dark-main;
+            }
+        }
+    }
+    h1{
+        font-size:2.5rem;
+        letter-spacing:1px;
+        @media @phone{
+            padding-bottom:1.5rem;
+        }
+    }
+    h1 span {
+        color:@main-color;
+    }
+ }

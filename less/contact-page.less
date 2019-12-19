@@ -1,0 +1,50 @@
+main{
+    .Flex(space-between);
+    padding:3rem;
+    img{
+        @media @phone{
+            display:none;
+        }
+        width:45%;
+    }
+}
+
+.contact-form{
+   padding:3rem 3rem;
+   @media @phone{
+       width:100%;
+   }
+   width:45%;
+   form{
+    //    .Flex(space-between,center,column);
+       input{
+           padding: 1rem 1rem;
+           width:100%;
+           background-color:white;
+           &:focus{
+               outline:none;
+               border-bottom-color:lightgreen;
+           }
+           @media @phone{
+               width:100%;
+           }
+           display:block;
+           
+       }
+       button{
+           width:10rem;
+           color:@light-main;
+           border:1px solid @dark-main;
+           font-weight:700;
+           text-align:center;
+
+           &:hover{
+               color:@dark-main;
+               background-color:@light-main;
+               cursor:pointer;
+           }
+
+       }
+   }
+
+}
